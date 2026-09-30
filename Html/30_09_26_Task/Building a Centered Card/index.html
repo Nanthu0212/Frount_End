@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Centered Profile Card</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            min-height: 100vh;
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+            background-color: #f2f2f2;
+            
+            color: #f2f2f2;
+
+            font-family: Arial, sans-serif;
+        }
+
+        .profile-card {
+
+            width: 350px;
+
+            padding: 30px;
+
+            background-color: rgb(116, 95, 95);
+
+            text-align: center;
+
+            border-radius: 15px;
+
+            box-shadow:
+                0 5px 20px
+                rgba(143, 64, 64, 0.15);
+        }
+
+        .profile-card img {
+
+            width: 120px;
+
+            height: 120px;
+
+            border-radius: 20%;
+
+            object-fit: cover;
+
+            margin-bottom: 20px;
+        }
+
+        .profile-card h1 {
+            margin-bottom: 10px;
+        }
+
+        .profile-card p {
+            color: #070707;
+
+            margin-bottom: 20px;
+        }
+
+        .profile-card button {
+
+            padding: 10px 20px;
+
+            border: none;
+
+            border-radius: 5px;
+
+            background-color: #007bff;
+
+            color: white;
+
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="profile-card">
+
+        <img
+            src="photo_me.png"
+            alt="Profile picture of Nanthu">
+
+        <h1>Nanthu</h1>
+
+        <p>
+            Web Developer
+        </p>
+
+        <button>
+            View Profile
+        </button>
+
+    </div>
+
+</body>
+</html>

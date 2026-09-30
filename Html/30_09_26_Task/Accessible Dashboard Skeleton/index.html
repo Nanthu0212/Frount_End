@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Accessible Dashboard</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+
+            min-height: 100vh;
+
+            display: flex;
+
+            flex-direction: column;
+
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #222;
+
+            color: white;
+
+            padding: 20px;
+        }
+
+        nav {
+            margin-top: 10px;
+        }
+
+        nav a {
+            color: white;
+
+            text-decoration: none;
+
+            margin-right: 20px;
+        }
+
+        main {
+            flex: 1;
+
+            padding: 30px;
+        }
+
+        .dashboard-card {
+            background-color: white;
+
+            padding: 25px;
+
+            border-radius: 10px;
+
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: #222;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+
+    <header role="banner">
+
+        <h1>My Dashboard</h1>
+
+        <nav aria-label="Main navigation">
+
+            <a href="#">Home</a>
+
+            <a href="#">Profile</a>
+
+            <a href="#">Settings</a>
+
+        </nav>
+
+    </header>
+
+    <main role="main">
+
+        <section
+            class="dashboard-card"
+            aria-labelledby="welcome-title">
+
+            <h2 id="welcome-title">
+                Welcome
+            </h2>
+
+            <p>
+                Welcome to your dashboard.
+            </p>
+
+        </section>
+
+
+        <section
+            class="dashboard-card"
+            aria-labelledby="statistics-title">
+
+            <h2 id="statistics-title">
+                Statistics
+            </h2>
+
+            <p>
+                Users: 1,250
+            </p>
+
+            <p>
+                Orders: 850
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer role="contentinfo">
+
+        <p>
+             2026 My Dashboard
+        </p>
+
+    </footer>
+
+</body>
+</html>
