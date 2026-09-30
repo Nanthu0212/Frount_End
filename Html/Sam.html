@@ -1,0 +1,72 @@
+<html>
+    <head>
+        <title> Display property </title>
+        <style>
+            body{
+                font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                margin: 20px;
+                background-color: #921992;
+                color: #242302;
+            }
+            header{
+                text-align: center;
+                margin-bottom: 10px;
+                border: 5px solid #1a0303;
+                border-radius: 10px;
+                background-color: #8f6586;
+            }
+            section{
+                margin-bottom: 10px;
+                border: 5px solid #d37319;
+                border-radius: 10px;
+                background-color: #3d1c97;
+                box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.9);
+            }
+            .example-area{
+                background-color: aqua;
+                padding: 10px;
+                border: 2px solid #ce6021;
+            }
+            .block-box{
+                display: block;
+                background-color: #f8f52f;
+                padding: 10px;
+                margin-bottom: 10px;
+                border: 1px solid #ccc;
+                max-width: 200px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1> Css display propertyes</h1>
+            <p> The display property in CSS is used to control the layout and visibility of elements on a web page. It determines how an element is displayed in relation to other elements. There are several values for the display property, including block, inline, inline-block, none, flex, grid, and more. Each value has its own specific behavior and use cases.</p>
+        </header>
+        <section>
+            <h2> Block Elements </h2>
+            <p> Block elements start on a new line and take up the full width available. </p>
+            <div class="example-area">
+                <div class="block-box">
+                    Block content 1
+                </div>
+                <div class="block-box">
+                    Block content 2
+                </div>
+                <div class="block-box">
+                    Block content 3
+                </div>
+            </div>
+        </section>
+        <Section>
+            <h2> Inline Elements </h2>
+            <p> Inline elements do not start on a new line and only take up as much width as necessary. </p>
+            <div class="example-area">
+                <span style="background-color: #f8f52f; padding: 5px; margin-right: 5px;">Inline content 1</span>
+                <span style="background-color: #f8f52f; padding: 5px; margin-right: 5px;">Inline content 2</span>
+                <span style="background-color: #f8f52f; padding: 5px;">Inline content 3</span>
+            </div>
+        </Section>
+    </body>
+</html>
