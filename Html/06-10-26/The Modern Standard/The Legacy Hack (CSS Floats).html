@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legacy Floats Sandbox</title>
+  <style>
+  *, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.float-container {
+  overflow: hidden; 
+  margin-inline: auto;
+}
+
+.float-container::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.float-col {
+  float: left;
+  width: 31%; 
+  margin-right: 3.5%;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+
+  padding-bottom: 9999px;
+  margin-bottom: -9999px;
+  padding-top: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.float-col:last-child {
+  margin-right: 0;
+}
+  </style>
+</head>
+<body>
+  <div class="float-container">
+    <div class="float-col">
+      <h3>Standard Card</h3>
+      <p>Short snippet of content.</p>
+    </div>
+
+  <div class="float-col">
+    <h3>Tall Card</h3>
+    <p>This column has substantially more content, forcing the parent to grow. The other columns use padding/negative margins to fill the space visually.</p>
+  </div>
+
+  <div class="float-col">
+    <h3>Interactive Card</h3>
+    <p>Legacy float column.</p>
+    <button>Action</button>
+  </div>
+</div>

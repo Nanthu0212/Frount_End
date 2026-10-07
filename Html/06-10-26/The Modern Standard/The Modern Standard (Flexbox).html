@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flexbox Alignment Sandbox</title>
+  <style>
+    *, *::before, *::after {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  gap: 1.5rem;
+
+}
+
+.flex-col {
+  flex: 1 1 0; 
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  background: #f8fafc;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+.flex-col .action-btn {
+  margin-top: auto;
+}
+  </style>
+<div class="flex-container">
+  <article class="flex-col">
+    <h3>Standard Card</h3>
+    <p>Short snippet of content.</p>
+  </article>
+
+  <article class="flex-col">
+    <h3>Tall Card</h3>
+    <p>This column has substantially more content, forcing the entire row to expand vertically. Both neighboring columns will match its height automatically.</p>
+  </article>
+
+  <article class="flex-col">
+    <h3>Interactive Card</h3>
+    <p>Equal height enables internal sticky elements.</p>
+    <button class="action-btn">Action</button>
+  </article>
+</div>
