@@ -1,6 +1,11 @@
-Frount_End
+# 🎨 Front-End Playground
 
-Description:
-🎨 Front-end playground: responsive layouts, CSS animations & JavaScript interactions, from HTML basics to polished UI ✨
+Small UI experiments: layouts, styling and interactions.
 
-Topics: html css javascript responsive-design frontend ui
+## ✨ Highlights
+- Responsive layouts with HTML & CSS
+- Hover effects and transitions
+- Practice pages and mini projects
+
+## 🧰 Tech
+HTML5 · CSS3 · JavaScript
