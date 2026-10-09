@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Inline vs Block Lab</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      padding: 20px;
+    }
+
+    .block-box {
+      display: block;
+      background-color: #e2e8f0;
+      border: 1px solid #cbd5e1;
+      padding: 10px;
+      margin-bottom: 8px;
+    }
+
+    .inline-box {
+      display: inline;
+      background-color: #fed7aa;
+      border: 1px solid #f97316;
+      padding: 2px 6px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <h3>Block Elements (Full Width)</h3>
+  <div class="block-box">Block 1: Stretches full container width</div>
+  <div class="block-box">Block 2: Automatically starts on a new line</div>
+
+  <h3>Inline Elements (Content Width)</h3>
+  <p>
+    Text flows normally with 
+    <span class="inline-box">Inline Element A</span>, 
+    <span class="inline-box">Inline Element B</span>, and 
+    <span class="inline-box">Inline Element C</span> sitting next to each other on the same line.
+  </p>
+
+</body>
+</html>

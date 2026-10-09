@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Box Model Playground</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      padding: 20px;
+    }
+
+    .container {
+      background-color: #f1f5f9;
+      border: 2px dashed #94a3b8;
+      display: inline-block;
+    }
+
+    .box {
+      width: 150px;
+      height: 80px;
+      background-color: #3b82f6;
+      color: white;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .box-padding {
+      padding: 24px;
+    }
+
+    .box-margin {
+      margin: 24px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="box box-padding">Box 1 (Padding)</div>
+    <div class="box box-margin">Box 2 (Margin)</div>
+  </div>
+
+</body>
+</html>

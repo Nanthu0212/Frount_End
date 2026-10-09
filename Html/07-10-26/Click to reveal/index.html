@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Click to Reveal</title>
+</head>
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #765cd3;
+        flex-direction: column;
+    }
+    .box{
+        width: 200px;
+        height: 100px;
+        background-color: red;
+        border-radius: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .conbox{
+        width: 500px;
+        height: 200px;
+        background-color: rgb(211, 228, 58);
+        border-radius: 10px;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 16px;
+        text-align: center;
+        padding: 20px;
+
+    }
+    button{
+        padding: 10px 20px;
+        font-size: 16px;
+        background-color: #1620b3;
+        color: white;
+
+    }
+    button:hover {
+        background-color: #1784af;
+    }
+    #content {
+        display: none;
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const revealButton = document.getElementById("revealButton");
+        const content = document.getElementById("content");
+
+        revealButton.addEventListener("click", function() {
+            content.style.display = "block";
+        });
+    });
+</script>
+<body>
+    <h1>Click to Reveal</h1>
+    <br>
+    <br>
+    <div class="box">
+        <button id="revealButton" style="padding: 10px 20px; font-size: 16px;">Click Me</button>
+    </div>
+    <div id="content">
+        <div class="conbox">
+            <p>
+                <h2>Revealed Content</h2>
+                <p>This content is revealed after clicking the button.</p>
+            </p>
+        </div>
+    </div>
+        
+</body>
